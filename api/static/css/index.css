@@ -31,7 +31,11 @@ body {
 button {
     background-color: var(--primary);
     color: var(--background);
-    padding: 6px;
+    padding: 0 10px 0 10px;
     border: none;
     border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
 }
