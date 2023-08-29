@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 body {
     font-family: 'Inter', sans-serif;
     --text: #edeff7;
@@ -9,9 +9,10 @@ body {
     --accent: #5b78da;
     background-color: var(--background);
     color: var(--text);
-      
 }
-
+h1 {
+    text-shadow: 1px 3px 30px var(--accent);
+}
 .wide-box {
     width: 100%;
     height: 300px;
@@ -20,9 +21,23 @@ body {
     justify-content: center;
 }
 
+.extend {
+    height: auto;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.small-box {
+    background-color: var(--background);
+    margin: 20px 20% 20px 20%;
+    padding: 50px 10px 50px 10px;
+    width: auto;
+}
+
 .secondary {
     background-color: var(--secondary);
     z-index: 5;
+    box-shadow: 0 0px 80px 0px var(--secondary);
 }
 
 .center-text {
@@ -30,16 +45,31 @@ body {
     align-items: center;
 }
 
+.wip {
+    font-family: 'Roboto Mono', monospace;
+}
 button {
     background-color: var(--primary);
     color: var(--background);
     padding: 0 10px 0 10px;
     border: none;
     border-radius: 10px;
+    box-shadow: 0 0 80px -20px var(--primary);
+    transition: box-shadow .5s;
 }
 
 button:hover {
     cursor: pointer;
+    box-shadow: 0 0 80px -10px var(--primary);
+    transition: all .5s;
+}
+
+button:active {
+    cursor: pointer;
+    box-shadow: 0 0 100px 12px var(--accent);
+    background-color: #5b78da;
+    color: var(--text);
+    transition: all .5s;
 }
 
 .canvas-div {
@@ -67,6 +97,10 @@ button:hover {
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: var(--primary);
+    box-shadow: 0 0 80px -20px var(--primary);
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
     border-radius: 5px;
   }
 
