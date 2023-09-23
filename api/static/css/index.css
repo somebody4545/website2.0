@@ -10,6 +10,10 @@ body {
     background-color: var(--background);
     color: var(--text);
 }
+
+a {
+    color: var(--primary);
+}
 h1 {
     text-shadow: 1px 3px 30px var(--accent);
 }
@@ -30,8 +34,9 @@ h1 {
 .small-box {
     background-color: var(--background);
     margin: 20px 20% 20px 20%;
-    padding: 50px 10px 50px 10px;
+    padding: 50px 10% 50px 10%;
     width: auto;
+    border-radius: 10px;
 }
 
 .secondary {
@@ -56,6 +61,7 @@ button {
     border-radius: 10px;
     box-shadow: 0 0 80px -20px var(--primary);
     transition: box-shadow .5s;
+    z-index: 100;
 }
 
 button:hover {
@@ -71,6 +77,20 @@ button:active {
     color: var(--text);
     transition: all .5s;
 }
+.project img, .project div {
+    height: 100px;
+    width: 100px;
+    float: right;
+    padding: 20px;
+}
+.project {
+    text-align: left;
+    overflow: auto;
+}
+.project button {
+    font-size: 12pt;
+    position: absolute
+}
 
 .canvas-div {
     align-items: center;
@@ -80,7 +100,10 @@ button:active {
     left: 0;
     z-index: 0;
 }
-
+div canvas {
+    height: 0;
+    width: 0;
+}
 /* scrollbar stuff */
 /* width */
 ::-webkit-scrollbar {
