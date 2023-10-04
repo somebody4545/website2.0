@@ -1,5 +1,5 @@
 (function () {
-    var body = document.body,
+    var body = document.getElementById("page"),
             e = document.documentElement,
             scrollPercent;
     $(window).unbind("scroll").scroll(function () {
