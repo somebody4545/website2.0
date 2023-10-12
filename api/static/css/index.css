@@ -29,12 +29,12 @@ body {
     color: var(--text);
     padding-bottom: 50px;
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: opacity 1.5s;
     overflow: hidden;
 }
 .page.visible {
     opacity: 1;
-    transition: opacity 0.5s;
+    transition: opacity 1.5s;
     overflow: auto;
 }
 a {
