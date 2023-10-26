@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 body {
     font-family: 'Inter', sans-serif;
     --text: #edeff7;
@@ -18,11 +19,12 @@ body {
     background-size: cover;
     color: var(--text);
     overflow-x: hidden;
-    
+
 }
+
 .page {
     background-color: var(--background);
-    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/static/images/layered-waves-haikei.svg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/static/images/layered-waves-haikei.svg");
     background-size: 100% 120vh;
     background-attachment: fixed;
     /* background-attachment: fixed; */
@@ -32,17 +34,21 @@ body {
     transition: opacity 1.5s;
     overflow: hidden;
 }
+
 .page.visible {
     opacity: 1;
     transition: opacity 1.5s;
     overflow: auto;
 }
+
 a {
     color: var(--primary);
 }
+
 h1 {
     text-shadow: 1px 3px 30px var(--accent);
 }
+
 .wide-box {
     width: auto;
     height: 300px;
@@ -53,18 +59,23 @@ h1 {
 
 .extend {
     height: auto;
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .small-box {
     background-color: var(--background);
-    margin: 100px 20% 50px 20%;
+    margin: 50px 20% 50px 20%;
     padding: 50px 10% 50px 10%;
     width: auto;
     border-radius: 10px;
 }
-
+@media (max-width: 1000px) {
+    .small-box {
+        margin: 50px 10% 50px 10%;
+        padding: 50px 10% 50px 10%;
+    }
+}
 .secondary {
     background-color: var(--secondary-rgba);
     z-index: 5;
@@ -82,6 +93,7 @@ h1 {
 .wip {
     font-family: 'Roboto Mono', monospace;
 }
+
 button {
     background-color: var(--primary);
     color: var(--background);
@@ -106,31 +118,43 @@ button:active {
     color: var(--text);
     transition: all .5s;
 }
-.project img, .project div {
+
+.project img,
+.project div {
     height: 100px;
     width: 100px;
     float: right;
     padding: 20px;
 }
+
 .project {
     text-align: left;
     overflow: auto;
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+@media (max-width: 1000px) {
+    .project {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        z
+    }
+}
+
 .project button {
     font-size: 12pt;
-    position: absolute
 }
 
 .canvas-div {
     align-items: center;
     position: absolute;
     height: 300px;
-    width:100%;
+    width: 100%;
     left: 0;
     z-index: 0;
 }
+
 div canvas {
     height: 0;
     width: 0;
@@ -140,30 +164,32 @@ div canvas {
     padding-top: 6px;
     padding-bottom: 6px;
 }
+
 /* scrollbar stuff */
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
 
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     background: var(--background);
     display: none;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: var(--primary);
     box-shadow: 0 0 80px -20px var(--primary);
     border-radius: 5px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    border-radius: 5px;
-  }
+}
 
-  
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 5px;
+}
+
+
 @media (max-width: 1000px) {
     .project div {
         float: none;
@@ -172,6 +198,7 @@ div canvas {
         margin-right: auto;
     }
 }
+
 #loading {
     display: flex;
     position: fixed;
@@ -181,7 +208,7 @@ div canvas {
     background-color: var(--background);
     background-repeat: no-repeat;
     background-position: center;
-  }
+}
 
 .loadcenter {
     margin: auto;
@@ -191,4 +218,6 @@ div canvas {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    padding-left: 10%;
+    padding-right: 10%;
 }
