@@ -33,6 +33,13 @@ body {
     opacity: 0;
     transition: opacity 1.5s;
     overflow: hidden;
+    position: absolute;
+    top: 0.5px;
+    left: 0;
+    right: 0;
+    bottom: 0.5px;
+    overflow-x: hidden; /* or any other value */
+    overflow-y: auto; /* or any other value */
 }
 
 .page.visible {
@@ -138,7 +145,6 @@ button:active {
     .project {
         padding-top: 15px;
         padding-bottom: 15px;
-        z
     }
 }
 
