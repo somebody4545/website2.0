@@ -7,7 +7,7 @@ body {
     --background: #0b0d19;
     --primary: #60ff90;
     --secondary: #0e1120;
-    --secondary-rgba: rgba(14, 17, 32, 0.8);
+    --secondary-rgba: rgba(14, 17, 32, 0.67);
     --accent: #5b78da;
 
     margin: 0;
