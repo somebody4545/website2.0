@@ -12,4 +12,4 @@ app1.load('https://prod.spline.design/SpkJeHkl37v2AY-9/scene.splinecode');
 
 const DCR = document.getElementById('DCR');
 const app2 = new Application(DCR);
-app2.load('https://prod.spline.design/eue-yeOsOTMaIzWR/scene.splinecode');
+app2.load('https://prod.spline.design/rTg1TthgVaxRD4sO/scene.splinecode');
