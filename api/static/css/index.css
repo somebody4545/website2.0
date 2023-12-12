@@ -21,7 +21,10 @@ body {
     overflow-x: hidden;
 
 }
-
+html {
+    scroll-behavior: smooth;
+  }
+  
 
 .page {
     background-color: var(--background);
@@ -43,6 +46,7 @@ body {
     /* or any other value */
     overflow-y: auto;
     /* or any other value */
+    scroll-behavior: smooth;
 }
 
 .page.visible {
@@ -65,8 +69,55 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    scroll-margin-top: 125px;
+}
+.header {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 25px;
+    margin-top: 50px;
+    width: auto;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+@media (max-width: 1000px) {
+    .header {
+        display: none;
+    }
 }
 
+.left {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.left * {
+    height:75px;
+    margin: 0 0 0 0;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.right {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+.right * {
+    height:75px;
+    margin: 0 10px 0 10px;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .extend {
     height: auto;
     padding-top: 25px;

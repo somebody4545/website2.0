@@ -13,16 +13,20 @@
 <body>{% block content %}
     <div id="loading"><div class="loadcenter"><div class="loader"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div><br><h1>Just a sec</h1><p>This website utilizes 3d effects and requires Javascript</p></div></div>
     <div class="page" id="page">
-        <div class="wide-box">
+        <section class="header secondary">
+            <div class="left"><img src="https://s4545.eu.org/static/favicon/android-chrome-384x384.png" alt="s4545"><h3>Inesh Dey</h3></div>
+            <div class="right"><a href="#projects"><h4>Projects</h4></a><a href="#blender?"><h4>Blender?</h4></a><a href="#contact-me"><h4>Contact Me</h4></a></div>
+        </section>
+        <section class="wide-box">
             <div class="center-text">
-                <h1>Hi</h1>
+                <h1 id="hi">Hi</h1>
                 <p>this is a website</p>
                 <a href="https://somebody4545.repl.co"><button>
                         <h3>Go to old site</h3>
                     </button></a>
             </div>
-        </div>
-        <div class="wide-box secondary extend">
+        </section>
+        <section class="wide-box secondary extend" id="projects">
             <div class="center-text">
                 <h1>Projects</h1>
                 <div class="small-box">
@@ -43,28 +47,28 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="wide-box">
+        </section>
+        <section class="wide-box" id="blender?">
             <div class="canvas-div"><canvas id="blender" loading="eager"></canvas></div>
             <div class="center-text">
-                <h1>Blender?</h1>
+                <h1 >Blender?</h1>
                 <p>blender.</p>
                 <h6>(try tapping on this one)</h6>
             </div>
-        </div>
-        <div class="wide-box secondary">
+        </section>
+        <section class="wide-box secondary" id="contact-me">
             <div class="center-text">
                 <h1>Contact me</h1>
                 <a href="https://github.com/somebody4545"><button>
                         <h3>Github</h3>
                     </button></a>
             </div>
-        </div>
-        <div class="wide-box secondary copyright">
+        </section>
+        <section class="wide-box secondary copyright">
             <div class="center-text">
                 <a href="https://github.com/somebody4545/website2.0/blob/main/LICENSE.md"><p>© 2023 Inesh Dey under GPLv3</p></a>
             </div>
-        </div>
+        </section>
     </div>
     <script src="/static/js/load.js"></script>
     <script src="/static/js/parallaxbg.js"></script>
