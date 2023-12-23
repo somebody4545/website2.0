@@ -1,44 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     {% block favicon %}
-    <link href="/static/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
-    <link href="/static/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-    <link href="/static/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
-    <link href="/static/favicon/site.webmanifest" rel="manifest">
-    <link color="#5bbad5" href="/static/favicon/safari-pinned-tab.svg" rel="mask-icon">
-    <link href="/static/favicon/favicon.ico" rel="shortcut icon">
-    <meta content="#da532c" name="msapplication-TileColor">
-    <meta content="/static/favicon/browserconfig.xml" name="msapplication-config">
-    <meta content="#ffffff" name="theme-color">
+    <link
+      href="/static/favicon/apple-touch-icon.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+    />
+    <link
+      href="/static/favicon/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      href="/static/favicon/favicon-16x16.png"
+      rel="icon"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link href="/static/favicon/site.webmanifest" rel="manifest" />
+    <link
+      color="#5bbad5"
+      href="/static/favicon/safari-pinned-tab.svg"
+      rel="mask-icon"
+    />
+    <link href="/static/favicon/favicon.ico" rel="shortcut icon" />
+    <meta content="#da532c" name="msapplication-TileColor" />
+    <meta
+      content="/static/favicon/browserconfig.xml"
+      name="msapplication-config"
+    />
+    <meta content="#ffffff" name="theme-color" />
     {% endblock favicon %}
-    <meta charset="UTF-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Somebody4545" name="title">
-    <meta content="A website for my stuff. Currently in progress." name="description">
-    <meta content="somebody4545, gaming, coding, programming" name="keywords">
-    <meta content="index, follow" name="robots">
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <meta content="English" name="language">
-    <meta content="Somebody4545" property="og:title"/>
-    <meta content="website" property="og:type"/>
-    <meta content="{{ url_for(request.endpoint, **request.view_args) }}" property="og:url"/>
-    <meta content="https://s4545.eu.org/static/favicon/android-chrome-384x384.png" property="og:image"/>
-    <meta content="A website for my stuff. Currently in progress." property="og:description"/>
-    <meta content="#60ff90" name="theme-color"/>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Somebody4545" name="title" />
+    <meta
+      content="A website for my stuff. Currently in progress."
+      name="description"
+    />
+    <meta content="somebody4545, gaming, coding, programming" name="keywords" />
+    <meta content="index, follow" name="robots" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="English" name="language" />
+    <meta content="Somebody4545" property="og:title" />
+    <meta content="website" property="og:type" />
+    <meta
+      content="{{ url_for(request.endpoint, **request.view_args) }}"
+      property="og:url"
+    />
+    <meta
+      content="https://s4545.eu.org/static/favicon/android-chrome-384x384.png"
+      property="og:image"
+    />
+    <meta
+      content="A website for my stuff. Currently in progress."
+      property="og:description"
+    />
+    <meta content="#60ff90" name="theme-color" />
 
     <title>Somebody4545</title>
-    <link href="/static/css/index.css" rel="stylesheet">
-    {% block head %}
-    {% endblock head %}
+    <link href="/static/css/index.css" rel="stylesheet" />
+    {% block head %} {% endblock head %}
+  </head>
 
-</head>
-
-<body>
-{% block content %}
-{% endblock content %}
-</body>
-
+  <body>
+    {% block content %} {% endblock content %}
+  </body>
 </html>
