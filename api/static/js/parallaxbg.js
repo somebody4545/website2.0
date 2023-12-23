@@ -1,9 +1,7 @@
 (function () {
-    var body = document.getElementById("page"),
-            e = document.documentElement,
-            scrollPercent;
-    body.onscroll = (event) => {
-        scrollPercent = (body.scrollTop / body.scrollHeight)*100;
+    let body = document.getElementById("page"), scrollPercent;
+    body.onscroll = () => {
+        scrollPercent = (body.scrollTop / body.scrollHeight) * 100;
         console.log(scrollPercent)
         console.log(body.scrollTop)
         console.log(body.scrollHeight)
