@@ -12,7 +12,6 @@ body {
 
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
     background-color: var(--background);
     background-position: center;
     background-repeat: no-repeat;
@@ -39,12 +38,10 @@ html {
     transition: opacity 1.5s;
     overflow: hidden;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0;
     right: 0;
-    bottom: 0px;
-    overflow-x: hidden;
-    /* or any other value */
+    bottom: 0;
     overflow-y: auto;
     /* or any other value */
     scroll-behavior: smooth;
@@ -150,7 +147,7 @@ h1 {
 .secondary {
     background: var(--secondary-rgba);
     z-index: 5;
-    box-shadow: 0 0px 80px 0px var(--secondary);
+    box-shadow: 0 0 80px 0 var(--secondary);
     border-radius: 25px;
     margin-left: 5%;
     margin-right: 5%;
@@ -332,7 +329,7 @@ div canvas {
     width: 64px;
     height: 64px;
     margin: 8px;
-    border: 8px solid #fff;
+    border: 8px solid;
     border-radius: 50%;
     animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
     border-color: #fff transparent transparent transparent;
