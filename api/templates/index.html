@@ -1,159 +1,195 @@
 {% extends "base.html" %}
 
 <html lang="en">
-
-
-<head>
+  <head>
     {% block head %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     {% endblock head %}
-</head>
+  </head>
 
-<body>{% block content %}
-<div id="loading">
-    <div class="loadcenter">
+  <body>
+    {% block content %}
+    <div id="loading">
+      <div class="loadcenter">
         <div class="loader">
-            <div class="lds-ring">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+          <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
-        <br>
+        <br />
         <h1>Just a sec</h1>
-        <p>This website utilizes 3d effects and requires Javascript</p></div>
-</div>
-<div class="page" id="page">
-    <section class="header secondary">
-        <div class="left"><img alt="s4545" src="https://s4545.eu.org/static/favicon/android-chrome-384x384.png">
-            <h3>Inesh Dey</h3></div>
-        <div class="right"><a href="#projects"><h4>Projects</h4></a><a href="#blender?"><h4>Blender?</h4></a><a
-                href="#contact-me"><h4>Contact Me</h4></a></div>
-    </section>
-    <section class="wide-box">
-        <div class="center-text">
-            <h1 id="hi">Hi</h1>
-            <p>this is a website</p>
-            <!--            <a href="https://somebody4545.repl.co">-->
-            <!--                <button>-->
-            <!--                    <h3>Go to old site</h3>-->
-            <!--                </button>-->
-            <!--            </a>-->
+        <p>This website utilizes 3d effects and requires Javascript</p>
+      </div>
+    </div>
+    <div class="page" id="page">
+      <section class="header secondary">
+        <div class="left">
+          <img
+            alt="s4545"
+            src="https://s4545.eu.org/static/favicon/android-chrome-384x384.png"
+          />
+          <h3>Inesh Dey</h3>
         </div>
-    </section>
-    <section class="wide-box secondary extend" id="projects">
+        <div class="right">
+          <a href="#projects"><h4>Projects</h4></a
+          ><a href="#blender?"><h4>Blender?</h4></a
+          ><a href="#contact-me"><h4>Contact Me</h4></a>
+        </div>
+      </section>
+      <section class="wide-box">
         <div class="center-text">
-            <h1>Projects</h1>
-            <div class="small-box">
-                <div class="project">
-                    <div>
-                        <canvas id="FlowMaster" loading="eager"></canvas>
-                    </div>
-                    <h2>FlowMaster</h2>
-                    <p>Made with <a href="https://github.com/anirudhnara">Anirudh</a>, <a
-                            href="https://github.com/ElectroChess">Pranith</a>, and <a
-                            href="https://github.com/AliMacky">Ali</a> for HackPNW 2023</p>
-                    <!--                    <a href="https://flowmaster.mythify.repl.co/">-->
-                    <button class="see dead">dead link >:( blame replit</button>
-                    <!--                    </a>-->
-                </div>
-                <div class="project">
-                    <div>
-                        <h3 class="center-text">still working on this model...</h3>
-                    </div>
-                    <h2>Raspberry Pi + Stripe website demo</h2>
-                    <p>Just a fun summer project.</p>
-                    <a href="https://github.com/somebody4545/Raspberry-Pi-Stripe-Demo">
-                        <button class="see">See it!</button>
-                    </a>
-                </div>
-                <div class="project">
-                    <div>
-                        <canvas id="DCR" loading="eager"></canvas>
-                    </div>
-                    <h2>DCR</h2>
-                    <p>Old monitor doesn't have Dynamic Contrast Ratio? Try this! Made this for an old monitor to be
-                        repurposed as a TV.</p>
-                    <a href="https://github.com/somebody4545/DCR">
-                        <button class="see">See it!</button>
-                    </a>
-                </div>
-                <div class="project">
-                        <img src="/static/images/ecocollab.png" alt="">
-                    <h2>EcoCollab</h2>
-                    <p>Project for EmP Hackfest's SmartHack. Won best programming award.</p>
-                    <a href="https://devpost.com/software/restoration-hub?ref_content=user-portfolio&ref_feature=in_progress">
-                        <button class="see">See it!</button>
-                    </a>
-                </div>
-                <div class="project">
-                    <div>
-                        <h1 class="center-text">?</h1>
-                    </div>
-                    <h2>Blog (in progress)</h2>
-                    <p>Making a fun blog site coming in the near future</p>
-                    <!--                    <a href="https://devpost.com/software/restoration-hub?ref_content=user-portfolio&ref_feature=in_progress">-->
-                    <button class="see dead">Haha... not yet</button>
-                    <!--                    </a>-->
-                </div>
+          <h1 id="hi">Hi</h1>
+          <p>this is a website</p>
+          <!--            <a href="https://somebody4545.repl.co">-->
+          <!--                <button>-->
+          <!--                    <h3>Go to old site</h3>-->
+          <!--                </button>-->
+          <!--            </a>-->
+        </div>
+      </section>
+      <section class="wide-box secondary extend" id="projects">
+        <div class="center-text">
+          <h1>Projects</h1>
+          <div class="small-box">
+            <div class="project">
+              <div>
+                <canvas id="FlowMaster" loading="eager"></canvas>
+              </div>
+              <h2>FlowMaster</h2>
+              <p>
+                Made with <a href="https://github.com/anirudhnara">Anirudh</a>,
+                <a href="https://github.com/ElectroChess">Pranith</a>, and
+                <a href="https://github.com/AliMacky">Ali</a> for HackPNW 2023
+              </p>
+              <!--                    <a href="https://flowmaster.mythify.repl.co/">-->
+              <button class="see dead">dead link >:( blame replit</button>
+              <!--                    </a>-->
             </div>
+            <div class="project">
+              <div>
+                <h3 class="center-text">still working on this model...</h3>
+              </div>
+              <h2>Raspberry Pi + Stripe website demo</h2>
+              <p>Just a fun summer project.</p>
+              <a
+                href="https://github.com/somebody4545/Raspberry-Pi-Stripe-Demo"
+              >
+                <button class="see">See it!</button>
+              </a>
+            </div>
+            <div class="project">
+              <div>
+                <canvas id="DCR" loading="eager"></canvas>
+              </div>
+              <h2>DCR</h2>
+              <p>
+                Old monitor doesn't have Dynamic Contrast Ratio? Try this! Made
+                this for an old monitor to be repurposed as a TV.
+              </p>
+              <a href="https://github.com/somebody4545/DCR">
+                <button class="see">See it!</button>
+              </a>
+            </div>
+            <div class="project">
+              <img src="/static/images/ecocollab.png" alt="" />
+              <h2>EcoCollab</h2>
+              <p>
+                Project for EmP Hackfest's SmartHack. Won best programming
+                award.
+              </p>
+              <a
+                href="https://devpost.com/software/restoration-hub?ref_content=user-portfolio&ref_feature=in_progress"
+              >
+                <button class="see">See it!</button>
+              </a>
+            </div>
+            <div class="project">
+              <div>
+                <h1 class="center-text">?</h1>
+              </div>
+              <h2>Blog (in progress)</h2>
+              <p>Making a fun blog site coming in the near future</p>
+              <!--                    <a href="https://devpost.com/software/restoration-hub?ref_content=user-portfolio&ref_feature=in_progress">-->
+              <button class="see dead">Haha... not yet</button>
+              <!--                    </a>-->
+            </div>
+          </div>
         </div>
-    </section>
-    <section class="wide-box" id="blender?">
+      </section>
+      <section class="wide-box" id="blender?">
         <div class="canvas-div">
-            <canvas id="blender" loading="eager"></canvas>
+          <canvas id="blender" loading="eager"></canvas>
         </div>
         <div class="center-text">
-            <h1>Blender?</h1>
-            <p>blender.</p>
-            <h6>(try tapping on this one)</h6>
+          <h1>Blender?</h1>
+          <p>blender.</p>
+          <h6>(try tapping on this one)</h6>
         </div>
-    </section>
-    <section class="wide-box secondary" id="contact-me">
+      </section>
+      <section class="wide-box secondary" id="contact-me">
         <div class="center-text">
-            <h1>Places to Find Me</h1>
-            <div class="button-row">
-                <form action="https://github.com/somebody4545">
-                    <button>
-                        <h3><img src="https://raw.githubusercontent.com/github/docs/main/assets/images/site/favicon.svg"
-                                 alt="Github"></h3>
-                    </button>
-                </form>
-                <form action="https://www.linkedin.com/in/ineshdey/">
-                    <button>
-                        <h3><img src="https://content.linkedin.com/content/dam/me/brand/en-us/brand-home/logos/In-Blue-Logo.png.original.png"
-                                 alt="LinkedIn"></h3>
-                    </button>
-                </form>
-                <form action="https://youtube.com/@somebody4545">
-                    <button>
-                        <h3><img style="width:30px" src="/static/images/yt_icon_mono_light.svg"
-                                 alt="YouTube"></h3>
-                    </button>
-                </form>
-            </div>
+          <h1>Places to Find Me</h1>
+          <div class="button-row">
+            <form action="https://github.com/somebody4545">
+              <button>
+                <h3>
+                  <img
+                    src="https://raw.githubusercontent.com/github/docs/main/assets/images/site/favicon.svg"
+                    alt="Github"
+                  />
+                </h3>
+              </button>
+            </form>
+            <form action="https://www.linkedin.com/in/ineshdey/">
+              <button>
+                <h3>
+                  <img
+                    src="https://content.linkedin.com/content/dam/me/brand/en-us/brand-home/logos/In-Blue-Logo.png.original.png"
+                    alt="LinkedIn"
+                  />
+                </h3>
+              </button>
+            </form>
+            <form action="https://youtube.com/@somebody4545">
+              <button>
+                <h3>
+                  <img
+                    style="width: 30px"
+                    src="/static/images/yt_icon_mono_light.svg"
+                    alt="YouTube"
+                  />
+                </h3>
+              </button>
+            </form>
+          </div>
         </div>
-    </section>
-    <section class="wide-box secondary copyright">
+      </section>
+      <section class="wide-box secondary copyright">
         <div class="center-text">
-            <a href="https://github.com/somebody4545/website2.0/blob/main/LICENSE.md"><p>© 2023 Inesh Dey under
-                GPLv3</p></a>
+          <a
+            href="https://github.com/somebody4545/website2.0/blob/main/LICENSE.md"
+            ><p>© 2023 Inesh Dey under GPLv3</p></a
+          >
         </div>
-    </section>
-</div>
-<script src="/static/js/load.js"></script>
-<script src="/static/js/parallaxbg.js"></script>
-<script async="" src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
-<script type="importmap">
-    {
-      "imports": {
-        "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.493/build/runtime.js"
+      </section>
+    </div>
+    <script src="/static/js/load.js"></script>
+    <script src="/static/js/parallaxbg.js"></script>
+    <script
+      async=""
+      src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"
+    ></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.493/build/runtime.js"
+        }
       }
-    }
-</script>
-<script src="/static/js/3dshenanigans.js" type="module"></script>
-{% endblock content %}
-</body>
-
+    </script>
+    <script src="/static/js/3dshenanigans.js" type="module"></script>
+    {% endblock content %}
+  </body>
 </html>
