@@ -247,6 +247,25 @@ div canvas {
     padding-bottom: 6px;
 }
 
+.dead {
+    background-color: gray;
+    color: white;
+    cursor: default;
+
+}
+.dead:hover {
+    background-color: gray;
+    color: white;
+    cursor: default;
+    box-shadow: none;
+}
+.dead:active {
+    background-color: gray;
+    color: white;
+    cursor: default;
+    box-shadow: none;
+}
+
 /* scrollbar stuff */
 /* width */
 ::-webkit-scrollbar {
@@ -364,4 +383,12 @@ h3 img {
 
 h3 {
     margin: 0;
+}
+
+.button-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
