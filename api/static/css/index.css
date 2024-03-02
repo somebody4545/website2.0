@@ -207,12 +207,17 @@ button:active {
     width: 100px;
     float: right;
     padding: 20px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
+
 .project div img {
     width: 100px;
     height: 100px;
     display: inline;
 }
+
 .project {
     text-align: left;
     overflow: auto;
@@ -256,12 +261,14 @@ div canvas {
     cursor: default;
 
 }
+
 .dead:hover {
     background-color: gray;
     color: white;
     cursor: default;
     box-shadow: none;
 }
+
 .dead:active {
     background-color: gray;
     color: white;
