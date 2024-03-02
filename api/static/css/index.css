@@ -202,14 +202,17 @@ button:active {
     transition: all .5s;
 }
 
-.project img,
 .project div {
     height: 100px;
     width: 100px;
     float: right;
     padding: 20px;
 }
-
+.project div img {
+    width: 100px;
+    height: 100px;
+    display: inline;
+}
 .project {
     text-align: left;
     overflow: auto;
