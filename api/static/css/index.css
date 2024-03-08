@@ -194,14 +194,17 @@ button:hover {
     transition: all .5s;
 }
 
-button:active {
+button:active{
     cursor: pointer;
     box-shadow: 0 0 100px 12px var(--accent);
     background-color: #5b78da;
     color: var(--text);
     transition: all .5s;
 }
-
+button:active img{
+    filter: invert(1);
+    transition: all .5s;
+}
 .project div {
     height: 100px;
     width: 100px;
