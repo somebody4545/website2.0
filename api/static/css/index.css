@@ -223,7 +223,7 @@ button:active img{
 
 .project {
     text-align: left;
-    overflow: auto;
+    overflow: visible;
     padding-top: 50px;
     padding-bottom: 50px;
 }
