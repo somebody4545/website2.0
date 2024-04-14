@@ -29,7 +29,7 @@ html {
 .page {
     background-color: var(--background);
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/static/images/layered-waves-haikei.svg");
-    background-size: 100% 120vh;
+    background-size: 100% 120%;
     color: var(--text);
     padding-bottom: 50px;
     opacity: 0;
