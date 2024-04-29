@@ -192,17 +192,19 @@ button:hover {
     transition: all .5s;
 }
 
-button:active{
+button:active {
     cursor: pointer;
     box-shadow: 0 0 100px 12px var(--accent);
     background-color: #5b78da;
     color: var(--text);
     transition: all .5s;
 }
-button:active img{
+
+button:active img {
     filter: invert(1);
     transition: all .5s;
 }
+
 .project div {
     height: 100px;
     width: 100px;
@@ -340,51 +342,20 @@ div canvas {
 
 }
 
-/* https://loading.io/css/ */
+/* HTML: <div class="loader"></div> */
 .loader {
-    margin-left: auto;
-    margin-right: auto;
+    width: 100px;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: l21 1s infinite cubic-bezier(0.7, 0.1, 0.1, 1);
+    filter: drop-shadow(0px 0px 4px var(--primary));
+    padding: 50px;
 }
 
-.lds-ring {
-    display: inline-block;
-    position: relative;
-    width: 80px;
-    height: 80px;
-}
-
-.lds-ring div {
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    width: 64px;
-    height: 64px;
-    margin: 8px;
-    border: 8px solid;
-    border-radius: 50%;
-    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: #fff transparent transparent transparent;
-}
-
-.lds-ring div:nth-child(1) {
-    animation-delay: -0.45s;
-}
-
-.lds-ring div:nth-child(2) {
-    animation-delay: -0.3s;
-}
-
-.lds-ring div:nth-child(3) {
-    animation-delay: -0.15s;
-}
-
-@keyframes lds-ring {
-    0% {
-        transform: rotate(0deg);
-    }
-
+@keyframes l21 {
     100% {
-        transform: rotate(360deg);
+        transform: rotate(-1turn)
     }
 }
 
