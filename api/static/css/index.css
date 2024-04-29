@@ -135,12 +135,6 @@ h1 {
     border-radius: 10px;
 }
 
-@media (max-width: 1000px) {
-    .small-box {
-        margin: 50px 10% 50px 10%;
-        padding: 50px 10% 50px 10%;
-    }
-}
 
 .secondary {
     background: var(--secondary-rgba);
@@ -168,6 +162,21 @@ h1 {
 .center-text {
     text-align: center;
     align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .small-box {
+        margin: 50px 10% 50px 10%;
+        padding: 50px 10% 50px 10%;
+    }
+    .secondary {
+        border-radius: 0px;
+        padding: 0;
+        margin: 0;
+    }
+    .copyright {
+        margin-top: 0;
+    }
 }
 
 .wip {
@@ -231,7 +240,7 @@ button:active img {
 @media (max-width: 1000px) {
     .project {
         padding-top: 15px;
-        padding-bottom: 15px;
+        padding-bottom: 40px;
     }
 }
 
@@ -310,6 +319,10 @@ div canvas {
         /* vertical center */
         margin-left: auto;
         margin-right: auto;
+    }
+    ::-webkit-scrollbar-track {
+        background: var(--background);
+        display: revert;
     }
 }
 
