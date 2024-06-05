@@ -10,6 +10,9 @@ ASSETS_DIR = os.path.dirname(os.path.abspath(__file__))
 def index():
     return render_template('index.html')
 
+@app.route('/walls')
+def walls():
+    return render_template('walls.html')
 
 context = ('server.crt', 'server.key')
 if __name__ == "__main__":

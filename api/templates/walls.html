@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+<html lang="en">
+
+
+<head>
+    {% block head %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    {% endblock head %}
+</head>
+
+<body>{% block content %}
+<div class="page visible" id="page">
+    <div style="padding-top: 50px;"></div>
+    <section class="wide-box secondary copyright">
+        <div class="center-text">
+            <h1>Wallpapers</h1>
+            <a href="/">Back to main page</a>
+        </div>
+    </section>
+    <section class="wide-box secondary extend" style="margin-top: 50px;">
+        <div class="center-text">
+            <h1>Duvall Aurora</h1>
+            <img src="/static/images/Duvall%20Aurora.png" alt="Duvall Aurora" style="position: static; margin-left: auto; margin-right: auto; width:25%">
+            <p></p><a href="https://www.flickr.com/photos/somebody4545/53735928254/in/datetaken-public/">Full Resolution on Flickr</a></p>
+        </div>
+    </section>
+    <section class="wide-box secondary extend" style="margin-top: 50px;">
+        <div class="center-text">
+            <h1>National Museum of Nuclear Science & History</h1>
+            <h3>Republic F-105 Thunderchief</h3>
+            <br>
+            <img src="/static/images/f105.png" alt="Republic F-105 Thunderchief" style="position: static; margin-left: auto; margin-right: auto; width:25%">
+            <p></p><a href="https://flickr.com/photos/somebody4545/53735934669/in/datetaken-public/">Full Resolution on Flickr</a></p>
+        </div>
+    </section>
+        <section class="wide-box secondary extend" style="margin-top: 50px;">
+        <div class="center-text">
+            <h1>White Sands Panorama</h1>
+            <img src="/static/images/whitesandspano.png" alt="White Sands Nat'l Park" style="position: static; margin-left: auto; margin-right: auto; width:25%">
+            <p></p><a href="https://www.flickr.com/photos/somebody4545/53735800433/in/datetaken-public/">Full Resolution on Flickr</a></p>
+        </div>
+    </section>
+    <section class="wide-box secondary copyright">
+        <div class="center-text">
+            <a href="https://github.com/somebody4545/website2.0/blob/main/LICENSE.md"><p>© 2024 Inesh Dey under
+                GPLv3</p></a>
+            <a href="https://github.com/somebody4545/website2.0/"><p style="padding-left: 50px; padding-right: 50px">source code is public on GitHub, you can use it as per the license above :)</p></a>
+        </div>
+    </section>
+</div>
+<script src="/static/js/parallaxbg.js"></script>
+<script async="" src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+<script type="importmap">
+    {
+      "imports": {
+        "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.493/build/runtime.js"
+      }
+    }
+</script>
+<script src="/static/js/3dshenanigans.js" type="module"></script>
+{% endblock content %}
+</body>
+
+</html>
