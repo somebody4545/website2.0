@@ -1,8 +1,8 @@
 import {Application} from '@splinetool/runtime';
 
-const blender = document.getElementById('blender');
-const blenderApp = new Application(blender);
-blenderApp.load('https://prod.spline.design/8kC6LukeLPjvsmAy/scene.splinecode');
+// const blender = document.getElementById('blender');
+// const blenderApp = new Application(blender);
+// blenderApp.load('https://prod.spline.design/8kC6LukeLPjvsmAy/scene.splinecode');
 
 
 const FlowMaster = document.getElementById('FlowMaster');
